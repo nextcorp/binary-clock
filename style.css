@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.labels {
+    position: relative;
+    top: 24px;
+    gap: 0.5rem;
+    font-size: 2rem;
+}
+
+.digit span {
+    margin-bottom: 0.2rem;
+    font-size: 2.5rem;
+}
+
+.digit {
+    gap: 0.2rem;
+}
+
+.digit, .labels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h, .m, .s {
+    border-width: 3px;
+    border-style: solid;
+    display: flex;
+    padding: 0.3rem 0.2rem;
+    gap: 1rem;
+}
+
+.h {
+    background: #fde6e2;
+    border-color: #d45253;
+}
+
+.m {
+    background: #e7ffed;
+    border-color: #2a9425;
+}
+
+.s {
+    background: #e6e5fd;
+    border-color: #0e00cd;
+}
+
+.bit {
+    border: 4px solid #000;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.zero {
+    background: #5f5a59;
+}
+
+.one {
+    background: #ff3fff;
+}
+
+.digit:nth-child(1) .bit:nth-child(2) {
+    margin-top: auto;
+}
+
+.time {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
